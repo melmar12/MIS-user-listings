@@ -2,6 +2,8 @@
 
 <h1>Listing Users</h1>
 
+<%= link_to 'New User', new_user_path %>
+
 <table>
   <thead>
     <tr>
@@ -30,4 +32,5 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+
+<%= will_paginate @posts %>
